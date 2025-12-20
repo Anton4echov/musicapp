@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Dmitry NE Music Player",
-    "slug": "dmitryne-music-player",
+    "slug": "music",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
