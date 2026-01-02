@@ -28,7 +28,6 @@
       "android": {
         "buildType": "apk",
         "gradleCommand": ":app:assembleDebug",
-        "withoutCredentials": false,
         "credentialsSource": "remote"
       },
       "ios": {
@@ -42,8 +41,7 @@
       "android": {
         "buildType": "apk",
         "gradleCommand": ":app:assembleRelease",
-        "credentialsSource": "remote",
-        "withoutCredentials": false
+        "credentialsSource": "remote"
       },
       "ios": {
         "enterpriseProvisioning": "universal",
@@ -54,13 +52,14 @@
   "submit": {
     "production": {
       "android": {
-        "serviceAccountKeyPath": "./google-play-key.json",
         "track": "internal"
+        /* Для полного онлайн submit, загрузи Service Account Key через веб-интерфейс Expo */
       },
       "ios": {
         "appleId": "your-email@example.com",
         "ascAppId": "YOUR_APP_ID",
         "appleTeamId": "YOUR_TEAM_ID"
+        /* Apple credentials можно добавить через веб-интерфейс Expo */
       }
     }
   }
