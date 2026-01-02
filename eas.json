@@ -18,8 +18,7 @@
       },
       "ios": {
         "enterpriseProvisioning": "universal",
-        "credentialsSource": "remote",
-        "buildNumber": "1.0.0"   /* можно автоинкрементировать через Expo */
+        "credentialsSource": "remote"
       }
     },
     "development": {
@@ -54,13 +53,11 @@
     "production": {
       "android": {
         "track": "internal"
-        /* Service Account Key для Google Play можно загрузить через веб-интерфейс Expo */
       },
       "ios": {
         "appleId": "your-email@example.com",
-        "ascAppId": "1234567891",   /* только цифры, ID приложения из App Store Connect */
-        "appleTeamId": "AB32CZE81F" /* 10 заглавных букв/цифр, Team ID из Apple Developer */
-        /* Apple credentials можно добавить через веб-интерфейс Expo */
+        "ascAppId": "1234567891",
+        "appleTeamId": "AB32CZE81F"
       }
     }
   }
