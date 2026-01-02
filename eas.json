@@ -9,16 +9,46 @@
         "EXPO_PUBLIC_ENV": "production"
       },
       "channel": "production",
-      "autoIncrement": true
+      "autoIncrement": true,
+      "android": {
+        "buildType": "apk",
+        "image": "latest",
+        "gradleCommand": ":app:assembleRelease",
+        "credentialsSource": "remote"
+      },
+      "ios": {
+        "enterpriseProvisioning": "universal",
+        "credentialsSource": "remote"
+      }
     },
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "channel": "development"
+      "channel": "development",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug",
+        "withoutCredentials": false,
+        "credentialsSource": "remote"
+      },
+      "ios": {
+        "simulator": true,
+        "credentialsSource": "remote"
+      }
     },
     "preview": {
       "distribution": "internal",
-      "channel": "preview"
+      "channel": "preview",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease",
+        "credentialsSource": "remote",
+        "withoutCredentials": false
+      },
+      "ios": {
+        "enterpriseProvisioning": "universal",
+        "credentialsSource": "remote"
+      }
     }
   },
   "submit": {
@@ -26,6 +56,11 @@
       "android": {
         "serviceAccountKeyPath": "./google-play-key.json",
         "track": "internal"
+      },
+      "ios": {
+        "appleId": "your-email@example.com",
+        "ascAppId": "YOUR_APP_ID",
+        "appleTeamId": "YOUR_TEAM_ID"
       }
     }
   }
