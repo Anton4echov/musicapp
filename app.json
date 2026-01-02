@@ -23,7 +23,8 @@
       ]
     },
     "ios": {
-      "bundleIdentifier": "com.dmitryne.musicplayer",  // <-- добавлено
+      "bundleIdentifier": "com.dmitryne.musicplayer",
+      "buildNumber": "1",           // <-- обязательно для iOS сборки
       "supportsTablet": true,
       "infoPlist": {
         "UIBackgroundModes": ["audio"]
